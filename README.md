@@ -1,0 +1,2 @@
+# minecraftserverfreewebform
+無料でマイクラ24時間サーバーを貸し出せます。
