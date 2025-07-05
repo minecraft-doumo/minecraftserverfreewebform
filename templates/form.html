@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>無料バニラサーバー申し込み</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: "Segoe UI", sans-serif;
+            padding: 2em;
+        }
+        form {
+            background-color: #fff;
+            border: 2px solid #aaa;
+            padding: 1.5em;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: auto;
+            box-shadow: 0 0 10px #ccc;
+        }
+        h1 {
+            text-align: center;
+            color: #2d7334;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #2d7334;
+            color: white;
+            border: none;
+            padding: 0.7em 1.5em;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #245c2a;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST">
+        <h1>無料バニラサーバー申し込み</h1>
+        <label>マイクラユーザー名</label>
+        <input type="text" name="username" required>
+
+        <label>Discord ID</label>
+        <input type="text" name="discord_id" required>
+
+        <label>メールアドレス</label>
+        <input type="email" name="email" required>
+
+        <label>バージョン選択</label>
+        <select name="version" required>
+            <option value="1.20.1">1.20.1</option>
+            <option value="1.19.4">1.19.4</option>
+            <option value="1.18.2">1.18.2</option>
+            <option value="latest">最新バージョン</option>
+        </select>
+
+        <label>
+            <input type="checkbox" name="eula_agree" required>
+            <a href="https://account.mojang.com/documents/minecraft_eula" target="_blank">Minecraft EULAに同意します</a>
+        </label><br><br>
+
+        <button type="submit">申し込む</button>
+    </form>
+</body>
+</html>
